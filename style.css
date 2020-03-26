@@ -27,19 +27,19 @@ h3{
 
 .card{
     display:flex;
-    height: 500px;
-    width: 800px;
     margin: 0 auto;
     background:#eee;
     border-radius: 4px;
+    max-width:900px;
     padding:5px;
     color: #222;
+    height:500px;
     
 }
 
 .controle{
     width: 45%;
-    border-right:1px solid #999;
+    border-right: 1px solid #999;
     display: flex;
     flex-direction: column;
     padding:5px
@@ -186,3 +186,23 @@ a{
     visibility: visible;
     transform: scaleX(1);
   }
+
+  @media (max-width:830px){
+    .card{
+        flex-direction: column;
+        height: 900px;
+        width: 70vh;
+        
+    }
+    .controle{
+        width:100%;
+        border-right:0;
+        border-bottom: 1px solid #999;
+    }
+    .resultado{
+        width:100%;
+    }
+    .boxes{
+        min-width:40vh;
+    }
+}
