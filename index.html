@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Playground</title>
+   </head>
+   <body>
+      <h1>CSS Playground</h1>
+      <div class="card">
+         <div class="controle">
+           
+            <div>
+               <h3>Justify Content</h3>
+               <div class="input-buttons">
+                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="flex-start" >
+                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="flex-end">
+                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="center">
+                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="space-between">
+                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="space-around">
+                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="initial">
+                
+                
+            </div>
+            <h3>Align Items</h3> 
+            <div class="input-buttons">
+                <input type="button" onclick="alignItems(event.target)" class="buttons" value="center" >
+                <input type="button" onclick="alignItems(event.target)" class="buttons" value="start">
+                <input type="button" onclick="alignItems(event.target)" class="buttons" value="flex-start">
+                <input type="button" onclick="alignItems(event.target)" class="buttons" value="flex-end">
+             
+            </div>
+            <h3>Flex Direction</h3>
+            <div class="input-button">
+                <input onclick="flexDirection(event.target)"type="button" value="column">
+                <input onclick="flexDirection(event.target)"type="button" value="row">
+                <input onclick="flexDirection(event.target)"type="button" value="column-reverse">
+                <input onclick="flexDirection(event.target)"type="button" value="row-reverse">
+            </div>
+        </div>
+         </div>
+         <c class="resultado">
+             
+                 <h2>Result</h2>
+            
+             <div class="boxes1">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                
+            </div>
+            
+            <code class="output">
+           <span class="result">.Result</span> 
+                {
+                    <br/> 
+
+                    <span class="code-display-flex">
+                        &nbsp;&nbsp;&nbsp; display <span class="code-display-result">flex;</span>
+                    </span>
+
+                    </br>
+
+                    <span class="code-justify-content">
+                       &nbsp;&nbsp;&nbsp;&nbsp;justify-content <span class="code-justify-result">flex-start;</span>
+                    </span>
+                    
+                    
+                    <br/>
+
+                    <span class="code-align-items">
+                        &nbsp;&nbsp;&nbsp;&nbsp;align-items <span class="code-align-result">start;</span>
+                    </span>
+                    
+                    <br/>
+                    
+                    <span class="code-flex-direction">
+                        &nbsp;&nbsp;&nbsp;&nbsp;flex-direction <span class="code-direction-result">row;</span> 
+                    </span> <br/> 
+           
+                }
+            </code>
+            
+         </div>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
