@@ -26,3 +26,4 @@ function flexDirection(eventTarget){
 
 }
 
+console.log("pra cima deles hadbala")
