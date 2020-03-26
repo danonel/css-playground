@@ -191,7 +191,7 @@ a{
     .card{
         flex-direction: column;
         height: 900px;
-        width: 70vh;
+        width: 75vw;
         
     }
     .controle{
@@ -202,7 +202,33 @@ a{
     .resultado{
         width:100%;
     }
-    .boxes{
-        min-width:40vh;
+    .boxes1 :nth-child(1){
+        background: #4592BF;
+        height: 50px;
+        width: 50px;
+        
+    }
+    .boxes1 :nth-child(2){
+        background:#306685;
+        height: 50px;
+        width: 50px;
+        
+    
+    }
+    .boxes1 :nth-child(3){
+        background: #5CC3FF;
+        height: 50px;
+        width: 50px;
+        
+    }
+    
+    .boxes1 :nth-child(4){
+        background: #173140;
+        height: 50px;
+        width: 50px;
+        
+    }
+    .output{
+        font-size: 12px;
     }
 }
