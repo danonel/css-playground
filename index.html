@@ -14,31 +14,35 @@
          <div class="controle">
            
             <div>
-               <h3>Justify Content</h3>
-               <div class="input-buttons">
-                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="flex-start" >
-                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="flex-end">
-                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="center">
-                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="space-between">
-                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="space-around">
-                <input type="button" onclick="justifyContent(event.target)" class="buttons" value="initial">
+            <h3>Justify Content</h3>
+            <div class="input-buttons" id="justifyContent">
+                <input type="button"  onclick="justifyContent(event.target)" value="flex-start" >
+                <input type="button"  onclick="justifyContent(event.target)" value="flex-end">
+                <input type="button"  onclick="justifyContent(event.target)" value="center">
+                <input type="button"  onclick="justifyContent(event.target)" value="space-between">
+                <input type="button"  onclick="justifyContent(event.target)" value="space-around">
+                <input type="button"  onclick="justifyContent(event.target)" value="initial">
+                <input type="button" style="display:none">
+                
                 
                 
             </div>
             <h3>Align Items</h3> 
-            <div class="input-buttons">
-                <input type="button" onclick="alignItems(event.target)" class="buttons" value="center" >
-                <input type="button" onclick="alignItems(event.target)" class="buttons" value="start">
-                <input type="button" onclick="alignItems(event.target)" class="buttons" value="flex-start">
-                <input type="button" onclick="alignItems(event.target)" class="buttons" value="flex-end">
+            <div class="input-buttons" id="alignItems">
+                <input type="button" onclick="alignItems(event.target)"  value="center" >
+                <input type="button" onclick="alignItems(event.target)"  value="start">
+                <input type="button" onclick="alignItems(event.target)"  value="flex-start">
+                <input type="button" onclick="alignItems(event.target)"  value="flex-end">
+                <input type="button" style="display:none">
              
             </div>
             <h3>Flex Direction</h3>
-            <div class="input-button">
-                <input onclick="flexDirection(event.target)"type="button" value="column">
-                <input onclick="flexDirection(event.target)"type="button" value="row">
-                <input onclick="flexDirection(event.target)"type="button" value="column-reverse">
-                <input onclick="flexDirection(event.target)"type="button" value="row-reverse">
+            <div class="input-buttons"  id="flexDirection">
+                <input onclick="flexDirection(event.target)"  type="button" value="column">
+                <input onclick="flexDirection(event.target)"  type="button" value="row">
+                <input onclick="flexDirection(event.target)"  type="button" value="column-reverse">
+                <input onclick="flexDirection(event.target)"  type="button" value="row-reverse">
+                <input type="button" style="display:none">
             </div>
         </div>
          </div>
