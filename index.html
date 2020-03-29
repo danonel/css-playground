@@ -16,33 +16,35 @@
             <div>
             <h3>Justify Content</h3>
             <div class="input-buttons" id="justifyContent">
+                <input type="button"  onclick="justifyContent(event.target)" value="initial">
+                <input type="button"  onclick="justifyContent(event.target)" value="center">
                 <input type="button"  onclick="justifyContent(event.target)" value="flex-start" >
                 <input type="button"  onclick="justifyContent(event.target)" value="flex-end">
-                <input type="button"  onclick="justifyContent(event.target)" value="center">
                 <input type="button"  onclick="justifyContent(event.target)" value="space-between">
                 <input type="button"  onclick="justifyContent(event.target)" value="space-around">
-                <input type="button"  onclick="justifyContent(event.target)" value="initial">
-                <input type="button" style="display:none">
-                
+                <input type="button"  onclick="justifyContent(event.target)" value="space-evenly">
+               
                 
                 
             </div>
             <h3>Align Items</h3> 
             <div class="input-buttons" id="alignItems">
+                <input type="button" onclick="alignItems(event.target)"  value="initial" >
                 <input type="button" onclick="alignItems(event.target)"  value="center" >
                 <input type="button" onclick="alignItems(event.target)"  value="start">
                 <input type="button" onclick="alignItems(event.target)"  value="flex-start">
                 <input type="button" onclick="alignItems(event.target)"  value="flex-end">
-                <input type="button" style="display:none">
+               
              
             </div>
             <h3>Flex Direction</h3>
             <div class="input-buttons"  id="flexDirection">
+                <input onclick="flexDirection(event.target)"  type="button" value="initial">
                 <input onclick="flexDirection(event.target)"  type="button" value="column">
                 <input onclick="flexDirection(event.target)"  type="button" value="row">
                 <input onclick="flexDirection(event.target)"  type="button" value="column-reverse">
                 <input onclick="flexDirection(event.target)"  type="button" value="row-reverse">
-                <input type="button" style="display:none">
+               
             </div>
         </div>
          </div>
@@ -64,26 +66,26 @@
                     <br/> 
 
                     <span class="code-display-flex">
-                        &nbsp;&nbsp;&nbsp; display <span class="code-display-result">flex;</span>
+                        &nbsp;&nbsp;&nbsp; display <span class="double-dot">:</span> <span class="code-display-result">flex;</span>
                     </span>
 
                     </br>
 
                     <span class="code-justify-content">
-                       &nbsp;&nbsp;&nbsp;&nbsp;justify-content <span class="code-justify-result">flex-start;</span>
+                       &nbsp;&nbsp;&nbsp;&nbsp;justify-content <span class="double-dot">:</span> <span class="code-justify-result">initial;</span>
                     </span>
                     
                     
                     <br/>
 
                     <span class="code-align-items">
-                        &nbsp;&nbsp;&nbsp;&nbsp;align-items <span class="code-align-result">start;</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;align-items <span class="double-dot">:</span> <span class="code-align-result">initial;</span>
                     </span>
                     
                     <br/>
                     
                     <span class="code-flex-direction">
-                        &nbsp;&nbsp;&nbsp;&nbsp;flex-direction <span class="code-direction-result">row;</span> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;flex-direction <span class="double-dot">:</span> <span class="code-direction-result">initial;</span> 
                     </span> <br/> 
            
                 }

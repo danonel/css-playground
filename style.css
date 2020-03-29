@@ -148,10 +148,8 @@ input[type="button"]:hover{
     color: #8be9fd;
 }
 
-.code-justify-result::before, .code-align-result::before, .code-direction-result::before , .code-display-result::before{
-    content:': ';
-    color:#ff79c6;
-    
+.double-dot{
+    color:#ff79c6
 }
 
 .code-justify-result, .code-align-result, .code-direction-result , .code-display-result{
@@ -190,6 +188,9 @@ a{
     transform: scaleX(1);
   }
 
+  input[value="initial"]{
+      background: #BF1E2C ;
+  }
   @media (max-width:830px){
     .card{
         flex-direction: column;

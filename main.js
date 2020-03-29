@@ -8,8 +8,9 @@ function justifyContent(eventTarget){
     var justifyContent = document.querySelector(".code-justify-result")
     var checkConfirm = document.querySelectorAll('#justifyContent>input')
 
-      
+    
     checkMark(checkConfirm, eventTarget)
+   
     justifyContent.innerHTML = ` ${eventTarget.value};` 
 
 } 
@@ -38,18 +39,18 @@ function flexDirection(eventTarget){
 }
 
 
-function checkMark(checkConfirm, eventTarget){
-    checkConfirm.forEach((button)=>{
 
-        eventTarget.style.background = '#BF1E2C'
-
-        var checkedButton = eventTarget.style.background
-
-        
-       if(checkedButton && button.style.background){
-           
-           button.style.background = '#BF1E2C'
+function checkMark(checkConfirm, eventTarget ){
+  
+  
+  var buttonArray = [...checkConfirm]
+  
+  buttonArray.map(button=>{
+    if(eventTarget!==button){
+       button.style.background = '#282a36'
+       }else{
+         button.style.background = '#BF1E2C'
        }
-       button.style.background ='#282a36'
-    }) 
+    
+  })
 }
