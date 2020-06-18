@@ -1,5 +1,6 @@
 console.log('pra cima deles hadbala')
 
+var navIsOpen = false
 
 function justifyContent(eventTarget){
     var boxes1 = document.querySelector('.boxes1')
@@ -54,3 +55,17 @@ function checkMark(checkConfirm, eventTarget ){
     
   })
 }
+
+function toggleNav(x) {
+    x.classList.toggle("change");
+
+if(navIsOpen){
+  document.querySelector(".sidebar-button").style.left = "5px";  document.getElementById("mySidenav").style.left = "-250px";
+  navIsOpen = false
+  return
+}
+ document.querySelector(".sidebar-button").style.left = "205px"; document.getElementById("mySidenav").style.left = "0";
+  navIsOpen = true
+  return
+}
+
