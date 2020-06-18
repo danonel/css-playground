@@ -292,6 +292,7 @@ box-shadow: 2px 14px 7px 0px rgba(0, 0, 0, 0.2);
 .sidebar-button{
   background:transparent;
   border:0;
+  cursor:pointer;
   top: 5px;
   left: 5px;
   z-index:3;
