@@ -79,6 +79,7 @@ input[type="button"]{
     margin:5px;
     color:white;
     transition: opacity 0.2s;
+    cursor: pointer;
     
 
   }
@@ -106,28 +107,28 @@ input[type="button"]:hover{
 
 .boxes1 :nth-child(1){
     background: #4592BF;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+        width: 50px;
     
 }
 .boxes1 :nth-child(2){
     background:#306685;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+        width: 50px;
     
 
 }
 .boxes1 :nth-child(3){
     background: #5CC3FF;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+        width: 50px;
     
 }
 
 .boxes1 :nth-child(4){
     background: #173140;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+        width: 50px;
     
 }
 
@@ -208,28 +209,28 @@ a{
     }
     .boxes1 :nth-child(1){
         background: #4592BF;
-        height: 50px;
-        width: 50px;
+        height: 20px;
+        width: 20px;
         
     }
     .boxes1 :nth-child(2){
         background:#306685;
-        height: 50px;
-        width: 50px;
+        height: 20px;
+        width: 20px;
         
     
     }
     .boxes1 :nth-child(3){
         background: #5CC3FF;
-        height: 50px;
-        width: 50px;
+        height: 20px;
+        width: 20px;
         
     }
     
     .boxes1 :nth-child(4){
         background: #173140;
-        height: 50px;
-        width: 50px;
+        height: 20px;
+        width: 20px;
         
     }
     .output{
@@ -240,6 +241,7 @@ a{
 /* The side navigation menu */
 .sidenav {
   height: 100%; 
+  
   width: 250px; 
   position: fixed; 
   z-index: 1; 
@@ -293,12 +295,14 @@ box-shadow: 2px 14px 7px 0px rgba(0, 0, 0, 0.2);
   background:transparent;
   border:0;
   cursor:pointer;
-  top: 5px;
-  left: 5px;
+  top: 15px;
+  left: 15px;
   z-index:3;
-  position:absolute;
+  position:fixed;
   transition:0.3s ease-out;
-  transition-delay:0.3s;
+  transition-delay:0.1s;
+  
+
 }
 
 
@@ -308,7 +312,9 @@ box-shadow: 2px 14px 7px 0px rgba(0, 0, 0, 0.2);
   background-color: white;
   margin: 6px 0;
   transition: 0.2s;
-  transition-delay:0.6s;
+  transition-delay:0.1s;
+  
+  border:1px solid rgba(0, 0, 0, 0.205);
 
 }
 
@@ -318,7 +324,9 @@ box-shadow: 2px 14px 7px 0px rgba(0, 0, 0, 0.2);
   background:#333;
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 
 .change .bar3 {
     background:#333;
