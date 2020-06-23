@@ -1,0 +1,22 @@
+@keyframes appear {
+  from {
+    transform:translateX(-30px);
+    opacity: 0.5;
+  }
+  to {
+    transform:translateX(0px);
+    opacity: 1;
+  }
+}
+
+.display-grid{
+  animation:appear 0.8s;
+ display: grid; 
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+}
+
+.display-grid span {
+   font-size:200px
+}
