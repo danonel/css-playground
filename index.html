@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles/flex.css">
+        <link rel="stylesheet" href="./styles/grid.css">
+        <link rel="stylesheet" href="./styles/globals.css">
         <meta name="description" content ="flexbox properties">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="cssicon.svg" />
@@ -15,7 +17,6 @@
 
           <div class="bar3"></div>
      </button>
-     
 
      <div id="mySidenav" class="sidenav">
   
@@ -24,14 +25,17 @@
        <h4>Display</h4>
        </div>
        <div class="nav-content">
-         <span>Flex</span>
-                  <span>Grid</span>
-
-  
+            <button onclick="handleFlex()">Flex</button>
+            <button onclick="handleGrid()">Grid</button>
        </div>
 </div>
       <h1>CSS Playground</h1>
-      <div class="card">
+      <div class="card"  >
+          <div class="display-grid" style="display: none;" >
+          
+             <span>🚧🏗🚧</span>
+          </div>
+            <div class="display-flex" >
          <div class="controle">
            
             <div>
@@ -44,9 +48,7 @@
                 <input type="button"  onclick="justifyContent(event.target)" value="space-between">
                 <input type="button"  onclick="justifyContent(event.target)" value="space-around">
                 <input type="button"  onclick="justifyContent(event.target)" value="space-evenly">
-               
-                
-                
+
             </div>
             <h3>Align Items</h3> 
             <div class="input-buttons" id="alignItems">
@@ -69,6 +71,7 @@
             </div>
         </div>
          </div>
+
          <div class="resultado">
              
                  <h2>Result</h2>
@@ -113,8 +116,11 @@
             </code>
             
          </div>
+        </div>
       </div>
       <footer>Made by <a href="https://www.linkedin.com/in/danieldmelo/">Daniel</a> e <a href="https://www.linkedin.com/in/filipemarron/">Filipez</a> ✌</footer>
-      <script src="main.js"></script>
+      <script src="./js/utils.js"></script>
+      <script src="./js/flex.js"></script>
+      <script src="./js/grid.js"></script>
    </body>
 </html>
