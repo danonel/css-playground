@@ -15,15 +15,15 @@
     margin: 0 auto;
     background:#eee;
     border-radius: 4px;
-    max-width:900px;
+    max-width: 1200px;
     padding:5px;
     color: #222;
-    height:500px;
     
 }
 
 .display-flex{
     display: flex;
+    width:100%;
     animation:appear 0.6s;
 }
 .controle{
@@ -69,8 +69,6 @@ input[type="button"]{
     color:white;
     transition: opacity 0.2s;
     cursor: pointer;
-    
-
   }
   
 
@@ -78,8 +76,6 @@ input[type="button"]:hover{
    opacity:0.9;
 
 }
-  
-
 
 .input-buttons{
     display:flex;
@@ -91,40 +87,36 @@ input[type="button"]:hover{
     display:flex;
     height: 100%;
     padding-bottom:5px;
+    flex-wrap: wrap;
+    height: 450px;
     
 }
 
-.boxes1 :nth-child(1){
+.boxes1 :nth-child(even){
     background: #4592BF;
     height: 50px;
         width: 50px;
     
 }
-.boxes1 :nth-child(2){
+.boxes1 :nth-child(odd){
     background:#306685;
     height: 50px;
-        width: 50px;
-    
+    width: 50px;
 
 }
-.boxes1 :nth-child(3){
-    background: #5CC3FF;
+ .boxes1 :nth-child(3n+2){
+    background: #2c2869;
     height: 50px;
-        width: 50px;
+    width: 50px;
     
 }
 
-.boxes1 :nth-child(4){
-    background: #173140;
-    height: 50px;
-        width: 50px;
-    
-}
+
 
 .output{
     background: #282a36;    
     border-radius:3px;
-    height: 30%;
+   
     color: #f8f8f2;
     padding:10px;
     text-align: left;
@@ -134,7 +126,7 @@ input[type="button"]:hover{
     color:#50fa7b
 }
 
-.code-justify-content , .code-align-items , .code-flex-direction , .code-display-flex{
+.code-justify-content , .code-align-items , .code-flex-direction , .code-display-flex, .code-align-content, .code-flexWrap-content{
     color: #8be9fd;
 }
 
@@ -142,51 +134,20 @@ input[type="button"]:hover{
     color:#ff79c6
 }
 
-.code-justify-result, .code-align-result, .code-direction-result , .code-display-result{
+.code-justify-result, .code-align-result, .code-direction-result , .code-display-result, .code-align-content-result, .code-flexWrap-result{
     color:#bd93f9;
     
 }
-footer{
-    margin: 20px;
-    font-size:25px;
-}
-a{
-    text-decoration: none;
-    color: #4592BF;
-    transition: 0.3;
-    position:relative;
-    font-weight: bold;
-}
-
-
-
- footer > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background: rgb(0, 211, 25);
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: .3s ease-in-out;
-  }
-  footer >a:hover:before, a:focus:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
 
   input[value="initial"]{
       background: #BF1E2C ;
   }
-  @media (max-width:830px){
+  @media (max-width:930px){
+    .display-flex{
+        flex-direction: column-reverse;
+    }
     .card{
-        flex-direction: column;
-        height: 900px;
         width: 75vw;
-        
     }
     .controle{
         width:100%;
@@ -195,34 +156,25 @@ a{
     }
     .resultado{
         width:100%;
+        flex-direction: column-reverse;
     }
-    .boxes1 :nth-child(1){
-        background: #4592BF;
-        height: 20px;
-        width: 20px;
-        
-    }
-    .boxes1 :nth-child(2){
-        background:#306685;
-        height: 20px;
-        width: 20px;
-        
-    
-    }
-    .boxes1 :nth-child(3){
-        background: #5CC3FF;
-        height: 20px;
-        width: 20px;
-        
-    }
-    
-    .boxes1 :nth-child(4){
-        background: #173140;
-        height: 20px;
-        width: 20px;
-        
-    }
+
     .output{
         font-size: 12px;
+        margin-bottom:10px;
     }
+}
+
+@media (max-width:470px){
+    .boxes1{
+        height:30px;
+        width:30px;
+        
+    }
+
+}
+
+#boxesCounter{
+    display: flex;
+    justify-content: space-around;
 }
