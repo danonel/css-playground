@@ -1,6 +1,8 @@
 console.log('opa')
 console.log('Made by Daniel and FilipeZ')
 
+const inputBoxesPerRow = document.querySelector('#inputBoxesPerRow')
+
 
 const boxes1 = document.querySelector('.boxes1')
 function justifyContent(eventTarget){
@@ -72,17 +74,18 @@ const checkbox = document.querySelector('#flexWrap')
   isChecked ? flexWrap.innerHTML = 'wrap' : flexWrap.innerHTML = 'nowrap'
   if(isChecked){
     boxes1.style.flexWrap = 'wrap'
-   
+    inputBoxesPerRow.removeAttribute("disabled", "disabled")
     return
   }
   boxes1.style.flexWrap = 'nowrap'
+  inputBoxesPerRow.setAttribute("disabled", "disabled")
   return
 })
 
 
-document.querySelector('input[type=range]').addEventListener('input', (e)=>{
+document.querySelector('#inputNumberOfBoxes').addEventListener('input', (e)=>{
   const inputRangeValue = e.target.value
-  document.querySelector('#numberOfBoxes').innerHTML = inputRangeValue
+  document.querySelector('#labelNumberOfBoxes').innerHTML = inputRangeValue
   console.log(inputRangeValue)
 
   function makeDiv(number){
@@ -91,10 +94,17 @@ document.querySelector('input[type=range]').addEventListener('input', (e)=>{
        for (i = 0; i<number; i++){
         divs.push(  `<div></div>`)
        }
-     document.querySelector('.boxes1').innerHTML = divs.map(div => `${div}`).join('')
+       boxes1.innerHTML = divs.map(div => `${div}`).join('')
     
 
   }
   makeDiv(e.target.value)
 })
 
+inputBoxesPerRow.addEventListener('input', (e)=>{
+  const inputRangeValue = e.target.value
+  document.querySelector('#labelBoxesPerRow').innerHTML = inputRangeValue
+
+  // TO-DO: Add size to all ".boxes1 > div" based on "#labelBoxesPerRow" value.
+  // TO-DO: Add the CSS of this changes to the "code" tag.
+})
